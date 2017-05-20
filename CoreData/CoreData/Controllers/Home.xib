@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="Home">
+            <connections>
+                <outlet property="textFieldAge" destination="7bg-QB-MgB" id="B7O-iF-mCj"/>
+                <outlet property="textFieldGender" destination="wM3-3g-fpy" id="vUt-Kk-2lg"/>
+                <outlet property="textFieldName" destination="d77-vk-XJK" id="OTc-f5-oR4"/>
+                <outlet property="textFieldStudentNo" destination="PnJ-YI-FPU" id="FpZ-W7-7dz"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wmg-tt-BoH">
+                    <rect key="frame" x="30" y="394" width="275" height="30"/>
+                    <color key="backgroundColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    <state key="normal" title="添加">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="add:" destination="-1" eventType="touchUpInside" id="7Tc-PJ-VrF"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JJ8-g6-SLw">
+                    <rect key="frame" x="30" y="432" width="275" height="30"/>
+                    <color key="backgroundColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    <state key="normal" title="删除">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="delete:" destination="-1" eventType="touchUpInside" id="Y1Y-Zn-WEA"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m08-fq-a1g">
+                    <rect key="frame" x="104" y="78" width="127" height="30"/>
+                    <color key="backgroundColor" red="0.69803921570000005" green="0.1450980392" blue="0.16862745100000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="view data">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="viewdata:" destination="-1" eventType="touchUpInside" id="8nD-JX-0aa"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f3X-hZ-Hez">
+                    <rect key="frame" x="30" y="470" width="275" height="30"/>
+                    <color key="backgroundColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    <state key="normal" title="修改">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="edit:" destination="-1" eventType="touchUpInside" id="h74-yl-v5G"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ttR-ZL-Hmj">
+                    <rect key="frame" x="30" y="508" width="275" height="30"/>
+                    <color key="backgroundColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    <state key="normal" title="查询">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="search:" destination="-1" eventType="touchUpInside" id="slV-48-YdM"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4La-pp-dvx">
+                    <rect key="frame" x="0.0" y="132" width="320" height="211"/>
+                    <subviews>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="姓名" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Tk-wu-wef">
+                            <rect key="frame" x="23" y="25" width="34" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="学号" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sen-qr-dGg">
+                            <rect key="frame" x="23" y="175" width="34" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="必须为数字" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7bg-QB-MgB">
+                            <rect key="frame" x="65" y="119" width="232" height="34"/>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="性别" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xi4-CD-xvA">
+                            <rect key="frame" x="23" y="75" width="34" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="年龄" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="csb-mV-gs8">
+                            <rect key="frame" x="23" y="125" width="34" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="必须为数字" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PnJ-YI-FPU">
+                            <rect key="frame" x="65" y="169" width="232" height="34"/>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="d77-vk-XJK">
+                            <rect key="frame" x="65" y="19" width="232" height="34"/>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="填写“0&quot;or &quot;1&quot;" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wM3-3g-fpy">
+                            <rect key="frame" x="65" y="69" width="232" height="34"/>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="f3X-hZ-Hez" firstAttribute="leading" secondItem="Wmg-tt-BoH" secondAttribute="leading" id="3z6-Bl-eqe"/>
+                <constraint firstItem="ttR-ZL-Hmj" firstAttribute="leading" secondItem="Wmg-tt-BoH" secondAttribute="leading" id="6Dz-qV-RsV"/>
+                <constraint firstItem="f3X-hZ-Hez" firstAttribute="height" secondItem="Wmg-tt-BoH" secondAttribute="height" id="6R4-wp-ROL"/>
+                <constraint firstItem="ttR-ZL-Hmj" firstAttribute="trailing" secondItem="Wmg-tt-BoH" secondAttribute="trailing" id="6la-fJ-eXi"/>
+                <constraint firstAttribute="bottom" secondItem="ttR-ZL-Hmj" secondAttribute="bottom" constant="30" id="8n8-nE-0bn"/>
+                <constraint firstItem="JJ8-g6-SLw" firstAttribute="trailing" secondItem="Wmg-tt-BoH" secondAttribute="trailing" id="BYF-Au-tjf"/>
+                <constraint firstItem="ttR-ZL-Hmj" firstAttribute="top" secondItem="f3X-hZ-Hez" secondAttribute="bottom" constant="8" id="Gcu-sJ-knz"/>
+                <constraint firstItem="ttR-ZL-Hmj" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="30" id="Jr3-Hm-5ox"/>
+                <constraint firstAttribute="trailing" secondItem="ttR-ZL-Hmj" secondAttribute="trailing" constant="15" id="TaP-UT-DIN"/>
+                <constraint firstItem="f3X-hZ-Hez" firstAttribute="trailing" secondItem="Wmg-tt-BoH" secondAttribute="trailing" id="UZS-gw-KNo"/>
+                <constraint firstItem="JJ8-g6-SLw" firstAttribute="leading" secondItem="Wmg-tt-BoH" secondAttribute="leading" id="WY7-ub-fNR"/>
+                <constraint firstItem="JJ8-g6-SLw" firstAttribute="top" secondItem="Wmg-tt-BoH" secondAttribute="bottom" constant="8" id="cJ3-GO-aOq"/>
+                <constraint firstItem="ttR-ZL-Hmj" firstAttribute="height" secondItem="Wmg-tt-BoH" secondAttribute="height" id="lK4-4L-nD5"/>
+                <constraint firstItem="JJ8-g6-SLw" firstAttribute="height" secondItem="Wmg-tt-BoH" secondAttribute="height" id="umd-aK-y8Y"/>
+                <constraint firstItem="f3X-hZ-Hez" firstAttribute="top" secondItem="JJ8-g6-SLw" secondAttribute="bottom" constant="8" id="wDm-us-JsQ"/>
+            </constraints>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+            <point key="canvasLocation" x="223" y="323"/>
+        </view>
+    </objects>
+</document>
